@@ -21,6 +21,7 @@ model User {
   @@map("users")
 }
 
+// data exemple 2024-02-02T23:10:49.375Z
 model Movies {
   id           String      @id @default(uuid())
   title        String      @unique

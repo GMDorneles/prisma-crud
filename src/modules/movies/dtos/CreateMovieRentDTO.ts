@@ -1,4 +1,4 @@
 export interface CreateMovieRentDTO {
-    movieID: string;
-    userID: string;
+    movieId: string;
+    userId: string;
 }
