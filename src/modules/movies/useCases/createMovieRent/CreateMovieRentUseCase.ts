@@ -14,13 +14,13 @@ export class CreateMovieRentUseCase {
       throw new AppError("movie does not exists!");
     }
     //verificar se o filme foi alugado por outra pessoa 
-    const moiveAlreadyRented = await prisma.movieRent.findFirst({
+    const movieAlreadyRented = await prisma.movieRent.findFirst({
       where: {
         movieId
       }
     });
 
-    if (moiveAlreadyRented) {
+    if (movieAlreadyRented) {
       throw new AppError("Movie alredy rented!");
     }
 
